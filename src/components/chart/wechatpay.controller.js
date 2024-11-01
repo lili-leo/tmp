@@ -9,7 +9,7 @@ const mysecret = ""
 const pay = new WxPay({
   appid: appid,     
   mchid: '',//商户号
-  publicKey: fs.readFileSync(), // 公钥
+  publicKey: fs.readFileSync(), // 公钥1
   privateKey: fs.readFileSync(), // 秘钥
   // publicKey: '123', // 公钥
   // privateKey:'123', // 秘钥
