@@ -4,16 +4,16 @@ const axios = require('axios');
 const path = require("path");
 const apiclient_cert = path.resolve(__dirname, 'apiclient_cert.pem');
 const apiclient_key = path.resolve(__dirname, 'apiclient_key.pem');
-const appid = 'wxf650bb3bce6255c6'
-const mysecret = "3d99af9e297d0bb908a4ee8d4d6a5ad0"
+const appid = ''
+const mysecret = ""
 const pay = new WxPay({
-  appid: appid,//小程序appid  wxf650bb3bce6255c6   wx2348147158ee0e3c
-  mchid: '1674941867',//商户号
-  publicKey: fs.readFileSync(apiclient_cert), // 公钥
-  privateKey: fs.readFileSync(apiclient_key), // 秘钥
+  appid: appid,     
+  mchid: '',//商户号
+  publicKey: fs.readFileSync(), // 公钥
+  privateKey: fs.readFileSync(), // 秘钥
   // publicKey: '123', // 公钥
   // privateKey:'123', // 秘钥
-  key: 'Whymkjgfyxgs01234567899876543210',//APIv3密钥
+  key: '',//APIv3密钥
 });
 const Ordersform = require("../models/db.js");
 const dayjs = require('dayjs');
